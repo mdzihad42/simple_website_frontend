@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Website</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        scroll-behavior: smooth;
+        background-color: #f7f9fc;
+        color: #333;
+    }
+
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #1e2a38;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #f7f9fc;
+        margin: 0 15px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #00bfff;
+    }
+
+    .nav-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #00bfff;
+    }
+
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background: url('./abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.avif') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #f7f9fc;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+   
+    section {
+        padding: 80px 20px;
+        max-width:100%;
+        margin: 0 auto;
+    }
+
+    section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #1e2a38;
+    }
+
+   
+    .about p {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+  
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .team-member {
+        background-color: #ffffff;
+        padding: 20px;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+    }
+
+   
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .service {
+        background-color: #ffffff;
+        padding: 20px;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+ 
+    .contact form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact input, 
+    .contact textarea {
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    .contact input:focus, 
+    .contact textarea:focus {
+        border-color: #00bfff;
+        outline: none;
+    }
+
+    .contact button {
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1e2a38;
+        color: #f7f9fc;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+        background-color: #00bfff;
+    }
+
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1e2a38;
+        color: #f7f9fc;
+    }
+    @media (max-width: 768px) {
+        .team-members, .services-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-logo">MD ZIHAD</div>
+    <div>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<section class="hero" id="hero">
+    <div>
+        <h1>Welcome to my website</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure tempora, neque porro dicta veritatis ratione aliquam aliquid rem sunt </p>
+    </div>
+</section>
+
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, non. Sit dolorem ratione temporibus! Porro deserunt aliquam quae suscipit vel dolorem? Optio laudantium dolorem magni! Delectus quasi quis alias maxime.</p>
+</section>
+
+
+<section class="team" id="team">
+    <h2>Our Team</h2>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="./233220360.jpg" alt="Team Member">
+            <h3>MD ZIHAD</h3>
+            <p>CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="./233220360.jpg" alt="Team Member">
+            <h3>MD ZIHAD</h3>
+            <p>Designer</p>
+        </div>
+        <div class="team-member">
+            <img src="./233220360.jpg" alt="Team Member">
+            <h3>MD ZIHAD</h3>
+            <p>Developer</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service">
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum eos fuga delectus deserunt inventore hic laboriosam nis</p>
+        </div>
+        <div class="service">
+            <h3>back-end</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum eos fuga delectus deserunt inventore hic laboriosam nis</p>
+        </div>
+        <div class="service">
+            <h3>Django</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum eos fuga delectus deserunt inventore hic laboriosam nis</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+
+<footer>
+    &copy; 2025 MD ZIHAD. All rights reserved.
+</footer>
+
+</body>
+</html>
